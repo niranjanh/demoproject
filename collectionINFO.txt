@@ -1,0 +1,127 @@
+##########   serviceProvides ###############
+
+db.serviceProvides.insertMany([{
+	_id:1,
+	name:"sp1", 
+	task: "no task" , 
+	start_date : " ", 
+	end_date : " ",
+	task_status : " ", 
+	password : "12345678" , 
+	image : " "
+},{
+	_id:2,
+	name:"sp2", 
+	task: "no task" , 
+	start_date : " ", 
+	end_date : " ",
+	task_status : " ", 
+	password : "12345678" , 
+	image : " "
+},{
+	_id:3,
+	name:"sp3", 
+	task: "no task" , 
+	start_date : " ", 
+	end_date : " ",
+	task_status : " ", 
+	password : "12345678" , 
+	image : " "
+},{
+	_id:4,
+	name:"sp4", 
+	task: "no task" , 
+	start_date : " ", 
+	end_date : " ",
+	task_status : " ", 
+	password : "12345678" , 
+	image : " "
+},])
+
+
+######## admin ###########
+db.admin.insertMany([
+{
+	_id:1,
+	name:"niranjan",
+	password:"12345678"
+},
+{
+	_id:2,
+	name:"rahul",
+	password:"12345678"
+},
+{
+	_id:3,
+	name:"ajinkya",
+	password:"12345678"
+},
+{
+	_id:4,
+	name:"annant",
+	password:"12345678"
+}
+])
+
+
+
+
+######### architect  #############
+db.architect.insertMany([
+{
+	_id:1,
+	name:"A1",
+	password:"12345678"
+},
+{
+	_id:2,
+	name:"A2",
+	password:"12345678"
+},
+{
+	_id:3,
+	name:"A3",
+	password:"12345678"
+},
+{
+	_id:4,
+	name:"A4",
+	password:"12345678"
+}
+])
+
+*********************************************************************************88
+
+//for login
+{
+"username" : "niranjan",
+"password" : "12345678",
+ "role" : "admin"
+}
+
+
+
+// for assigning task
+{
+  "id" : 4,
+  "name" :"sp4",
+  "task" : "write code in node js",
+  "task_status" : "ongoing",
+  "start_date" : "2018-04-13",
+  "end_date": "2018-05-13"
+}
+
+// for deleteing task
+{
+"username" : "niranjan",
+"password" : "12345678",
+ "role" : "admin",
+ "task" : "write code in python"
+}
+
+//add architect
+{
+  "id" : 4,
+  "name" :"sp4",
+  "password" : "12345678"
+}
